@@ -9,3 +9,7 @@ Jorge Ocana
 Cade Thomasson
 Rui Tian
 Miroslav Tushev
+
+=====================
+Useful Links:
+https://adeshpande3.github.io/How-I-Used-Deep-Learning-to-Train-a-Chatbot-to-Talk-Like-Me
