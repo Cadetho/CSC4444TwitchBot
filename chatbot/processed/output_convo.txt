@@ -22,3 +22,10 @@ HUMAN ++++ tell me something
 BOT ++++ i ' m sorry .
 HUMAN ++++ exit
 BOT ++++ 
+HUMAN ++++ hi
+HUMAN ++++ hi
+BOT ++++ 
+HUMAN ++++ how are you?
+BOT ++++ i ' m fine .
+HUMAN ++++ exit
+BOT ++++ 
