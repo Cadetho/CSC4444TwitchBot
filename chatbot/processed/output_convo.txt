@@ -1,0 +1,24 @@
+HUMAN ++++ hi
+BOT ++++ i . . . . . . . . . . . . . . . . . .
+HUMAN ++++ Hello
+BOT ++++ i . . . . . . . . . . . . . . . . . .
+HUMAN ++++ How are you doing?
+BOT ++++ i . . . . . . . . . . . . . . . . . .
+HUMAN ++++ hey
+BOT ++++ i . . . . . . . . . . . . . . . . . .
+HUMAN ++++ what's your name?
+BOT ++++ i . . . . . . . . . . . . . . . . . .
+HUMAN ++++ hi
+BOT ++++ 
+HUMAN ++++ how are you?
+BOT ++++ i ' m fine .
+HUMAN ++++ hello
+BOT ++++ 
+HUMAN ++++ what's your name?
+BOT ++++ the car .
+HUMAN ++++ how was your day?
+BOT ++++ i ' m fine .
+HUMAN ++++ tell me something
+BOT ++++ i ' m sorry .
+HUMAN ++++ exit
+BOT ++++ 
