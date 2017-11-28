@@ -43,19 +43,3 @@ class TwitchBot:
     def getUser(self, line):
         ret = re.search(":.*#(.*) :", line)
         return ret.group(1)
-
-    # entry point
-    #def main(self):
-        #readbuffer = ""
-        #s = self.openSocket()
-        #self.joinRoom(s)
-        
-       # while True:
-         #   readbuffer = readbuffer + s.recv(1024).decode(encoding='utf_8')
-         #   temp = readbuffer.split("\n")
-         #   readbuffer = temp.pop()
-        #
-         #   for line in temp:
-         #       print(line)
-        #        if("@bassmaster0409" in self.getMessage(line)):
-         #           self.sendMessage(s, "@" + self.getUser(line) + " Are you talking to me?")
