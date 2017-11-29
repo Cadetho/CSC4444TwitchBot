@@ -370,7 +370,7 @@ class Chatbot:
             for line in temp:
                 # ping by twitch server
                 if ("PING :tmi.twitch.tv" in line):
-                    twitchbot.sendMessage(s, "PONG :tmi.twitch.tv")
+                    s.send("PONG :tmi.twitch.tv".encode(encoding='utf_8'))
                 # if the user asks the streamer
                 elif("@bassmaster0409" in twitchbot.getMessage(line)):
                     print(line)
@@ -380,7 +380,7 @@ class Chatbot:
                     questionSeq = []  # Will be contain the question as seen by the encoder
                     answer = self.singlePredict(question, questionSeq)
                     if not answer:
-                        print('Warning: sentence too long, sorry. Maybe try a simpler sentence.')
+                        twitchbot.sendMessage(s, "Warning: sentence too long, sorry. Maybe try a simpler sentence.")
                         continue  # Back to the beginning, try again
 
                     #print('{}{}'.format("BOT: ", self.textData.sequence2str(answer, clean=True)))
