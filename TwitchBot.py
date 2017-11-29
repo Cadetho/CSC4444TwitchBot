@@ -1,11 +1,15 @@
-#from mySocket import openSocket, sendMessage
-#from initialize import joinRoom
+# Provides an interface which communicates between Twitch and AI
+
 import re
 import socket
 import string
 from settings import HOST, PORT, OAUTH, IDENT, CHANNEL
 
 class TwitchBot:
+    def __init__(self):
+        # workaround the be able to access streamer's name inside chatbot.py
+        self.nickname = CHANNEL
+
     def openSocket(self):
         s = socket.socket()
         s.connect((HOST, PORT))

@@ -349,10 +349,6 @@ class Chatbot:
             print()
 
     def mainTestTwitch(self, sess):
-        """ Try predicting the sentences that the user will enter in the console
-        Args:
-            sess: The current running session
-        """
         twitchbot = TwitchBot()
 
         print('Testing: Launch Twitch mode:')
@@ -372,7 +368,7 @@ class Chatbot:
                 if ("PING :tmi.twitch.tv" in line):
                     s.send("PONG :tmi.twitch.tv \r\n".encode(encoding='utf_8'))
                 # if the user asks the streamer
-                elif("@bassmaster0409" in twitchbot.getMessage(line)):
+                elif("@" + twitchbot.nickname in twitchbot.getMessage(line)):
                     print(line)
                     q = re.match("(@\S*) (.*)", twitchbot.getMessage(line))   
                     question = q.group(2)
@@ -383,8 +379,6 @@ class Chatbot:
                         twitchbot.sendMessage(s, "Warning: sentence too long, sorry. Maybe try a simpler sentence.")
                         continue  # Back to the beginning, try again
 
-                    #print('{}{}'.format("BOT: ", self.textData.sequence2str(answer, clean=True)))
-                    # reply in the format "@username message"
                     reply = "@" + twitchbot.getUser(line) + " " + self.textData.sequence2str(answer, clean=True)
                     twitchbot.sendMessage(s, reply)
 
