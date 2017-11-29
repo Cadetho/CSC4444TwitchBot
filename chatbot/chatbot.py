@@ -370,7 +370,7 @@ class Chatbot:
             for line in temp:
                 # ping by twitch server
                 if ("PING :tmi.twitch.tv" in line):
-                    s.send("PONG :tmi.twitch.tv".encode(encoding='utf_8'))
+                    s.send("PONG :tmi.twitch.tv \r\n".encode(encoding='utf_8'))
                 # if the user asks the streamer
                 elif("@bassmaster0409" in twitchbot.getMessage(line)):
                     print(line)
