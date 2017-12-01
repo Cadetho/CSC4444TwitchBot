@@ -8,7 +8,7 @@ from settings import HOST, PORT, OAUTH, IDENT, CHANNEL
 class TwitchBot:
     def __init__(self):
         # workaround the be able to access streamer's name inside chatbot.py
-        self.nickname = CHANNEL
+        self.nickname = IDENT
 
     def openSocket(self):
         s = socket.socket()
